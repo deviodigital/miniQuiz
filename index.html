@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="miniQuiz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>miniQuiz &dash; AngularJS Quiz App &dash; Built by Devio Digital</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,700" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic" />
+	<!-- QuizApp CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- QuizApp Scripts -->
+	<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+	<script src="js/app.js"></script>
+
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html" ng-click="reset()">miniQuiz</a>
+		</div>
+	<div id="navbar" class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="http://www.robertdevore.com/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Realease Notes</a></li>
+			<li><a href="https://www.github.com/deviodigital/"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star on Github</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li class="dropdown-header">Bootstrap Templates</li>
+					<li><a href="https://github.com/deviodigital/landingpage-squeeze-page">Squeeze Page</a></li>
+					<li><a href="https://github.com/deviodigital/landingpage-realestate">Real Estate Sales</a></li>
+					<li role="separator" class="divider"></li>
+					<li class="dropdown-header">WordPress Plugins</li>
+					<li><a href="http://www.wpdispensary.com">WP Dispensary</a></li>
+					<li><a href="http://www.robertdevore.com/slackedd">Slackedd</a></li>
+					<li role="separator" class="divider"></li>
+					<li class="dropdown-header">WordPress Themes</li>
+					<li><a href="http://www.robertdevore.com/clean-blog-free-wordpress-theme">Clean Blog</a></li>
+					<li><a href="http://www.robertdevore.com/peddle-free-wordpress-theme">Peddle</a></li>
+					<li><a href="http://www.robertdevore.com/mnml-free-wordpress-theme">MNML</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+<div class="container theme-showcase" role="main">
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<h1>miniQuiz</h1>
+		<p>Fork and expansion of the original <a href="http://odhyan.com/blog/2014/12/building-a-simple-quiz-app-using-angularjs/">QuizApp</a> code</p>
+	</div>
+
+	<quiz/>
+
+</div><!--/ .container -->
+
+<footer>
+	<p>Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> in <a href="http://www.robertdevore.com" target="_blank">Michigan</a></p>
+</footer><!--/ footer -->
+
+</body>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+</html>

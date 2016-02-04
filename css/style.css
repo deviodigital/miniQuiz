@@ -1,0 +1,175 @@
+body {
+	background: #EEE;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Merriweather', 'Helvetica', 'Arial';
+	font-size: 16px;
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', 'Merriweather', 'Helvetica', 'Arial';
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+h3 {
+	color: rgba(0,0,0,0.5);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.jumbotron {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	text-align: center;
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+}
+
+#options {
+	margin: 10px 0;
+}
+
+.next-question {
+	margin-right: 10px;
+}
+
+#score {
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/**
+ * Question options
+ */
+
+ul#options {
+	margin-left: 0;
+}
+
+ul#options li {
+	list-style-type: none;
+}
+
+/**
+ * Dropdown
+ */
+
+.theme-dropdown .dropdown-menu {
+	position: static;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+	margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+	width: auto;
+}
+
+/**
+ * Navigation
+ */
+
+.navbar .container {
+	font-family: 'Lato', 'Merriweather', 'Helvetica', 'Arial';
+	line-height: 1;
+	text-align: center;
+}
+
+.navbar > .container .navbar-brand {
+    color: #FFF;
+    font-weight: 700;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #DDD;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #080808;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #222;
+}
+
+.navbar-header {
+    float: none;
+    display: inline-block;
+}
+
+#navbar {
+    float: none;
+    display: inline-block !important;
+}
+
+/**
+ * miniQuiz Display
+ */
+
+.intro {
+	text-align: center;
+}
+
+.intro,
+.quiz-area {
+	width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/** 
+ * Footer
+ */
+
+footer {
+	border-top: 1px solid #DDD;
+	color: #858585;
+	font-size: 13px;
+	margin: 48px 0 0 0;
+	padding: 40px 0 0 0;
+}
+
+footer a,
+footer a:link,
+footer a:focus,
+footer a:visited {
+	color: #858585;
+}
+
+footer a:hover {
+	color: #333;
+}
+
+footer span.glyphicon {
+	color: #e00000;
+}

@@ -1,0 +1,46 @@
+<div class="quiz-area" ng-show="inProgress">
+	<div class="repeated-item" ng-show="!quizOver">
+		<h2 id="question">{{question}}</h2>
+		<ul id="options">
+			<li ng-repeat="option in options">
+				<label>
+					<input type="radio" name="answer" value="{{option}}">
+					{{option}}
+				</label>
+			</li>
+		</ul>
+		<button class="btn btn-lg btn-primary" ng-click="checkAnswer()" ng-show="answerMode">Submit</button>
+
+		<div ng-show="!answerMode">
+			<span ng-show="correctAns">
+				<div class="alert alert-success" role="alert">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> <strong>Success!</strong> You got it right :)
+				</div>
+			</span>
+			<span ng-show="!correctAns">
+				<div class="alert alert-danger" role="alert">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <strong>Oh snap!</strong> You got it wrong :(
+				</div>
+			</span>
+			<button ng-click="nextQuestion()" class="btn btn-lg btn-info next-question">Next Question</button>
+			<button class="btn btn-lg btn-danger" ng-click="reset()">Start Over</button>
+		</div>
+	</div>
+
+	<div ng-show="quizOver">
+		<h2>You've completed the miniQuiz!</h2>
+		<p>Congratulations! Share your score with friends and invite them to beat you ... if they can :)</p>
+		<a href="http://twitter.com/home?status=I%20just%20took%20this%20cool%20quiz%20and%20got%20{{score}}%20out%20of%20{{options.length+1}}%20answers%20correct!%20Try%20and%20beat%20me%20here:%20http://www.github.com/deviodigital/miniQuiz/%20#miniQuiz" target="_blank" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Tweet Your Score</a>
+		<button class="btn btn-lg btn-default" ng-click="reset()"><span class="glyphicon glyphicon-left" aria-hidden="true"></span> Play again</button>
+	</div>
+
+	<div id="score">
+		<span class="" ng-show="quizOver">Final </span>Score: {{score}} of {{options.length+1}}
+	</div>
+</div>
+
+<div class="intro" ng-show="!inProgress">
+	<p>Welcome to the QuizMe</p>
+	<p>More information can be added here at a later time, explaining the quiz, how many questions there are, and so on.</p>
+	<button class="btn btn-lg btn-primary" id="startQuiz" ng-click="start()"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Start the Quiz</button>
+</div>
