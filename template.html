@@ -30,7 +30,7 @@
 	<div ng-show="quizOver">
 		<h2>You've completed the miniQuiz!</h2>
 		<p>Congratulations! Share your score with friends and invite them to beat you ... if they can :)</p>
-		<a href="http://twitter.com/home?status=I%20just%20took%20this%20cool%20quiz%20and%20got%20{{score}}%20out%20of%20{{options.length+1}}%20answers%20correct!%20Try%20and%20beat%20me%20here:%20http://www.github.com/deviodigital/miniQuiz/%20#miniQuiz" target="_blank" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Tweet Your Score</a>
+		<a href="http://twitter.com/home?status=I%20just%20took%20the%20miniQuiz%20and%20got%20{{score}}%20out%20of%20{{options.length+1}}%20answers%20correct!%20Try%20and%20beat%20me%20here:%20http://www.robertdevore.com/demo/miniquiz/%20#miniQuiz" target="_blank" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Tweet Your Score</a>
 		<button class="btn btn-lg btn-default" ng-click="reset()"><span class="glyphicon glyphicon-left" aria-hidden="true"></span> Play again</button>
 	</div>
 
@@ -40,6 +40,6 @@
 </div>
 
 <div class="intro" ng-show="!inProgress">
-	<p>More information can be added here at a later time, explaining the quiz, how many questions there are, and so on.</p>
+	<p>The following quiz is written in AngularJS, is 5 questions long, all of which are hiphop related for the demo. You can test the demo here, or <a href="https://github.com/deviodigital/miniQuiz" target="_blank">download</a> the app from Github.</p>
 	<button class="btn btn-lg btn-primary" id="startQuiz" ng-click="start()"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Start the Quiz</button>
 </div>

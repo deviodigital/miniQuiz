@@ -36,7 +36,7 @@ li {
 
 .container {
 	width: 100%;
-	max-width: 960px;
+	max-width: 1300px;
 	margin: 0 auto;
 	text-align: left;
 }
@@ -129,16 +129,6 @@ ul#options li {
 .navbar-inverse .navbar-nav > .active > a:hover {
     color: #fff;
     background-color: #222;
-}
-
-.navbar-header {
-    float: none;
-    display: inline-block;
-}
-
-#navbar {
-    float: none;
-    display: inline-block !important;
 }
 
 .navbar > .container .navbar-brand span {
