@@ -47,6 +47,11 @@ li {
     font-weight: 700;
 }
 
+.jumbotron h1 span {
+    color: rgba(0,0,0,0.5);
+    font-size: 40px;
+}
+
 #options {
 	margin: 10px 0;
 }
@@ -130,6 +135,15 @@ ul#options li {
 #navbar {
     float: none;
     display: inline-block !important;
+}
+
+.navbar > .container .navbar-brand span {
+    color: rgba(255,255,255,0.2);
+    font-size: 13px;
+}
+
+.navbar > .container .navbar-brand:hover {
+    color: rgba(255,255,255,0.8);
 }
 
 /**
