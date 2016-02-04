@@ -58,28 +58,28 @@ app.directive('quiz', function(quizFactory) {
 app.factory('quizFactory', function() {
 	var questions = [
 		{
-			question: "Which is the largest country in the world by population?",
-			options: ["India", "USA", "China", "Russia"],
+			question: "Which is the first album Tupac released?",
+			options: ["Me Against the World", "All Eyez on Me", "2Pacalypse Now", "Until the End of Time"],
 			answer: 2
 		},
 		{
-			question: "When did the second world war end?",
-			options: ["1945", "1939", "1944", "1942"],
+			question: "Which Notorious BIG album didn't break the US top 10?",
+			options: ["Ready to Die", "Life After Death", "Born Again", "Duets: The Final Chapter"],
 			answer: 0
 		},
 		{
-			question: "Which was the first country to issue paper currency?",
-			options: ["USA", "France", "Italy", "China"],
+			question: "Which group worked with Tupac, BIG and Eazy-E?",
+			options: ["A Tribe Called Quest", "112", "Wu-Tang Clan", "Bone Thugs-N-Harmony"],
 			answer: 3
 		},
 		{
-			question: "Which city hosted the 1996 Summer Olympics?",
-			options: ["Atlanta", "Sydney", "Athens", "Beijing"],
-			answer: 0
+			question: "Who did Nas release his debut album through?",
+			options: ["Sony", "Def Jam", "Columbia", "Flip Mode"],
+			answer: 2
 		},
 		{	
-			question: "Who invented telephone?",
-			options: ["Albert Einstein", "Alexander Graham Bell", "Isaac Newton", "Marie Curie"],
+			question: "KRS-One released 'Criminal Minded' with what producer?",
+			options: ["Jam Master Jay", "Scott La Rock", "Scott Storch", "Swizz Beatz"],
 			answer: 1
 		}
 	];

@@ -50,4 +50,3 @@ This app wouldn't have been possible without the following open source resources
 ## Known bugs
 
 * Mobile menu toggle
-* Change questions
