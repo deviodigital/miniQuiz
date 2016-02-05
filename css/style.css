@@ -159,6 +159,11 @@ ul#options li {
     margin: 0 auto;
 }
 
+.dropdown-menu {
+	left:auto;
+	right: 0;
+}
+
 /** 
  * Footer
  */
